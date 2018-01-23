@@ -21,11 +21,11 @@ info_keys = ["imp_test", "cost_test", "clk_test", "imp_train", "cost_train", "cl
 
 # info_keys:imp_test   cost_test   clk_test    clk_train   imp_train   field   cost_train  dim  price_counter_train
 def get_camp_info(camp, src="ipinyou"):
-	if src == "ipinyou":
-		info = pickle.load(open(ipinyouPath + camp + "/info.txt", "rb"))
-	elif src == "vlion":
-		info = pickle.load(open(vlionPath + camp + "/info.txt", "rb"))
-	elif src == "yoyi":
-		info = pickle.load(open(yoyiPath + camp + "/info.txt", "rb"))
-	return info
+  if src == "ipinyou":
+    info = pickle.load(open(ipinyouPath + camp + "/info.txt", "rb"))
+  elif src == "vlion":
+    info = pickle.load(open(vlionPath + camp + "/info.txt", "rb"))
+  elif src == "yoyi":
+    info = pickle.load(open(yoyiPath + camp + "/info.txt", "rb"))
+  return info
 
